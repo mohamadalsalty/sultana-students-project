@@ -34,10 +34,10 @@
     </table>
     @if($classes->hasPages())
         <div class="d-flex justify-content-between">
-            <a class="btn btn-info" href="{{ $classes->previousPageUrl() }}">
+            <a class="btn btn-success" href="{{ $classes->previousPageUrl() }}">
                 Prev
             </a>
-            <a class="btn btn-info" href="{{ $classes->nextPageUrl() }}">
+            <a class="btn btn-success" href="{{ $classes->nextPageUrl() }}">
                 Next
             </a>
         </div>
