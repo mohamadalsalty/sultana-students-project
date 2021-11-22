@@ -4,7 +4,7 @@
 
 @section('content')
 <form action="{{ url('students/store') }}" method="post">
-    
+        <a href="/students/index"><i class="fas fa-backward fs-2" style="color:#02b875;"></i></a><br><br>
     <center><h1><i style="font-size:130px;" class="text-center fas fa-user"></i></h1></center>
 
     @csrf
