@@ -3,8 +3,9 @@
 @section('title' , 'Classes')
 
 @section('content')
-<a href="/classes/index"><i class="fas fa-backward fs-2" style="color:#02b875;"></i></a><br><br>
-<form action="{{ url('classes/update/'.$classe->id) }}"
+<br><br>
+<a href="/classes/index"><i class="fas fa-backward fs-4" style="color:#445EFE;"></i></a><br><br>
+<center><form class="form1" action="{{ url('classes/update/'.$classe->id) }}"
     method="post">
     @csrf
     @method('PUT')
@@ -59,6 +60,5 @@ $(document).ready(function(){
 
 });
 </script>
-
-
+<br><br><br>  <br><br><br>  
 @endsection

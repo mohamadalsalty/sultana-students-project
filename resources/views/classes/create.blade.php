@@ -4,10 +4,11 @@
 
 @section('content')
 
-<form action="{{ url('classes/store') }}" method="post">
-    @csrf
-    <a href="/classes/index"><i class="fas fa-backward fs-2" style="color:#02b875;"></i></a><br><br>
 
+    <br><br>
+    <a href="/classes/index"><i class="fas fa-backward fs-4" style="color:#445EFE;"></i></a><br><br>
+    <center><form class="form1" action="{{ url('classes/store') }}" method="post">
+        @csrf
     <div class="form-group has-danger">
         <center><h1><i style="font-size:130px;" class="text-center fas fa-users"></i></h1></center>
         <label class="form-label mt-4 justify-content-center" for="class_name">
@@ -59,5 +60,5 @@ $(document).ready(function(){
 
 });
 </script>
-
+<br><br><br>  <br><br><br>  
 @endsection

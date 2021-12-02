@@ -53,7 +53,7 @@ class StudentController extends Controller
             'country_id' => $request->country_id,
             'date_of_birth' => $request->date_of_birth
         ]);
-        $msg = ['type' => 'success', 'msg' => 'Classe created successfully .'];
+        $msg = ['type' => 'success', 'msg' => 'Student created successfully .'];
         $msg = json_encode($msg);
         return $msg;
 

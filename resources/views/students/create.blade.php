@@ -3,11 +3,12 @@
 @section('title' , 'Students')
 
 @section('content')
-<form action="{{ url('students/store') }}" method="post">
-    
-    <center><h1><i style="font-size:130px;" class="text-center fas fa-user"></i></h1></center>
 
-    @csrf
+    <br><br>
+    <a href="/students/index"><i class="fas fa-backward fs-4" style="color:#445EFE;"></i></a>
+    <center> <form class="form1" action="{{ url('students/store') }}" method="post">
+    <center><h1><i style="font-size:130px;" class="text-center fas fa-user"></i></h1></center>
+        @csrf
     <div class="form-group has-danger">
         <label class="form-label mt-4" for="name">
             Name

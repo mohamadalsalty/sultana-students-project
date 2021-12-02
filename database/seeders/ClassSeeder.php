@@ -15,7 +15,7 @@ class ClassSeeder extends Seeder
     public function run()
     {
         Classe::factory()
-        ->count(10)
+        ->count(30)
         ->create();
     }
 }

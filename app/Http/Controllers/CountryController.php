@@ -94,7 +94,7 @@ class CountryController extends Controller
         $country->name = $request->name;
         $country->save();
 
-        $msg = ['type' => 'success', 'msg' => 'Class was changed .'];
+        $msg = ['type' => 'success', 'msg' => 'Country updated successfully .'];
         $msg = json_encode($msg);
         return $msg;         
     }
@@ -109,7 +109,7 @@ class CountryController extends Controller
     {
         $country = Country::findOrFail($id);
         $country->delete();
-        $msg = ['type' => 'success', 'msg' => 'Class was deleted .'];
+        $msg = ['type' => 'success', 'msg' => 'Country deleted successfully .'];
         $msg = json_encode($msg);
         return $msg;
 

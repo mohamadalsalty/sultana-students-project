@@ -3,11 +3,14 @@
 @section('title' , 'Countries')
 
 @section('content')
-<form action="{{url('countries/store')}}" method="POST">
-    <a href="/countries/index"><i class="fas fa-backward fs-2" style="color:#02b875;"></i></a><br><br>
-    <center><h1><i style="font-size:130px;" class="text-center fas fa-globe-asia"></i></h1></center>
+
+    <br><br>
+    <a href="/countries/index"><i class="fas fa-backward fs-4" style="color:#445EFE;"></i></a>
+   
 
 {{-- <form action="{{ route('countries.store') }}" method="post"> --}}
+    <center><form class="form1" action="{{url('countries/store')}}" method="POST">
+        <center><h1><i style="font-size:130px;" class="text-center fas fa-globe-asia"></i></h1></center>
     @csrf
     <div class="form-group has-danger">
         <label class="form-label mt-4" for="name">
@@ -21,7 +24,7 @@
         </div>
         @enderror
     </div>
-    <button class="btn btn-success mt-2 btn-control">Submit</button>
+    <button class="btn btn-success mt-2 form-control">Submit</button>
 </form>
 
 

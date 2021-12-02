@@ -3,8 +3,9 @@
 @section('title' , 'Students')
 
 @section('content')
-<a href="/students/index"><i class="fas fa-backward fs-2" style="color:#02b875;"></i></a><br><br>
-<form>
+<br><br>
+<a href="/students/index"><i class="fas fa-backward fs-4" style="color:#445EFE;"></i></a><br><br>
+<center><form class="form1">
     @csrf
     @method('PUT')
     <div class="form-group has-danger">

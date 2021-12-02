@@ -3,17 +3,21 @@
 @section('title' , 'Countries')
 
 @section('content')
-<a href="/"><i class="fas fa-backward fs-2" style="color:#02b875;"></i></a><br><br>
-<a href="/countries/create"><button type="submit" class="btn btn-success "> {{__('Create')}} </button></a>
+<br><br>
+<a href="/"><i class="fas fa-backward fs-4" style="color:#445EFE;"></i></a>&nbsp;&nbsp;
+<a href="/countries/create"><button type="submit" class="btn btn-primary "> {{__('Create')}} </button></a><br><br>
     <table class="table">
-        <thead>
+        <thead class="table-secondary">
             <tr>
                 <th>
                     Country name
                 </th>
+                <th>
+                    Options
+                </th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="table-light">
             @foreach ($countries as $country)
                 <tr id="countryName{{$country->id}}">
                     <td>

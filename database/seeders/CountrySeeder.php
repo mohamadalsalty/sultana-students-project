@@ -15,7 +15,7 @@ class CountrySeeder extends Seeder
     public function run()
     {
         Country::factory()
-                ->count(10)
+                ->count(30)
                 ->create();
     }
 }

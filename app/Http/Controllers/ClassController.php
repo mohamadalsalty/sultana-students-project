@@ -93,7 +93,7 @@ class ClassController extends Controller
         $classe->class_name = $request->class_name;
         $classe->save();
 
-        $msg = ['type' => 'success', 'msg' => 'Class was changed .'];
+        $msg = ['type' => 'success', 'msg' => 'Class updated successfully .'];
         $msg = json_encode($msg);
         return $msg;         
 
@@ -110,7 +110,7 @@ class ClassController extends Controller
         $classe = Classe::findOrFail($id);
         // return 'ok';
         $classe->delete();
-        $msg = ['type' => 'success', 'msg' => 'Class was deleted .'];
+        $msg = ['type' => 'success', 'msg' => 'Class delete successfully .'];
         $msg = json_encode($msg);
         return $msg;
     }

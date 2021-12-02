@@ -4,9 +4,6 @@
 
 @section('content')
 
-<a href="/countries/index"><button type="submit" class="btn btn-success "> {{__('Countries')}} </button></a>
-<a href="/students/index"><button type="submit" class="btn btn-success "> {{__('Students')}} </button></a>
-<a href="/classes/index"><button type="submit" class="btn btn-success "> {{__('Classes')}} </button></a>
 <br><br>
 <ul class="nav nav-tabs">
     <li class="nav-item">
@@ -32,17 +29,17 @@
             </center>
 
         <table class="table">
-            <thead>
-                <tr>
-                    <th>
+            <thead class="table-secondary">
+                <tr class="table-secondary">
+                    <th class="table-secondary">
                         Class
                     </th>
-                    <th>
+                    <th class="table-secondary">
                         Students
                     </th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="table-light">
                 @foreach ($classes as $class)
                     <tr>
                         <td>
@@ -61,7 +58,7 @@
                 <center><h1><i style="font-size:130px;color:#02b875;" class="text-center fas fa-globe-asia"></i></h1></center>
             </center>        
         <table class="table">
-            <thead>
+            <thead class="table-secondary">
                 <tr>
                     <th>
                         Country
@@ -71,7 +68,7 @@
                     </th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="table-light">
                 @foreach ($countries as $country)
                     <tr>
                         <td>
@@ -96,6 +93,7 @@
             </center>
         </tr>
     </table>
+    <br><br><br>  <br><br><br>  
     </div>
 </div>
 @endsection
